@@ -9,8 +9,6 @@ if (!file.exists(filename)){
   download.file(fileURL, filename, method="curl")
 }  
 
-# Checking if folder exists
-
 if (!file.exists("household_power_consumption")) { 
   unzip(filename) 
 }
