@@ -1,6 +1,5 @@
 
 
-setwd("C:/Users/User/Documents/0. KUALA LUMPUR/20. THRIVE/Maths for DataSciences/DATA SCIENCES SPECIALIZATION/4. EXPLORATORY DATA ANALYSIS")
 
 ### read dataset
 
@@ -52,7 +51,7 @@ legend("topright", col=c("black", "red", "blue"), lwd=c(1,1,1),
        c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 #Save plot3
 dev.copy(png,"plot3.png", width=480, height=480)
-dev.off
+dev.off()
 
 #Plot 4
 
@@ -74,4 +73,4 @@ with(dataset, {
 
 #Save plot4
 dev.copy(png,"plot4.png", width=480, height=480)
-dev.off
+dev.off()
