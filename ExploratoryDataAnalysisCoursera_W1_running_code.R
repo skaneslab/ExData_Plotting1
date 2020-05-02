@@ -1,4 +1,7 @@
 
+
+setwd("C:/Users/User/Documents/0. KUALA LUMPUR/20. THRIVE/Maths for DataSciences/DATA SCIENCES SPECIALIZATION/4. EXPLORATORY DATA ANALYSIS")
+
 ### read dataset
 
 filename <- "data.zip"
@@ -7,6 +10,7 @@ if (!file.exists(filename)){
   download.file(fileURL, filename, method="curl")
 }  
 
+# Checking if folder exists
 
 if (!file.exists("household_power_consumption")) { 
   unzip(filename) 
@@ -51,6 +55,7 @@ dev.copy(png,"plot3.png", width=480, height=480)
 dev.off
 
 #Plot 4
+
 par(mfrow=c(2,2), mar=c(4,4,2,1))
 with(dataset, {
   plot(Global_active_power~datetime, type="l", 
